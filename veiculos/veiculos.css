@@ -1,0 +1,243 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.secao {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.secao-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.secao-header h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.botao {
+    padding: 0.25rem 0.5rem;
+    background-color: #e0e0e0;
+    color: #121212;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.botao:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}
+
+.botao-perigo {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+.botao-perigo:hover {
+    background-color: #777;
+}
+
+.botao-secundario {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.botao-secundario:hover {
+    background-color: #555;
+}
+
+#trocadorDePagina {
+    background-color: #444;
+    color: #fff;
+}
+
+#trocadorDePagina:hover {
+    background-color: #666;
+}
+
+.grade-cartoes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.cartao {
+    background-color: #252525;
+    border-left: 5px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cartao:hover {
+    transform: translateY(-8px);
+}
+
+.cartao h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #fff;
+    border-bottom: 1px dashed #555;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cartao p {
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.cartao p strong {
+    color: #ccc;
+}
+
+.cartao-acoes {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-conteudo {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.botao-fechar {
+    color: #e0e0e0;
+    font-size: 3rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.botao-fechar:hover {
+    color: #fff;
+}
+
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+}
+
+.grupo-formulario label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.grupo-formulario input,
+.grupo-formulario select {
+    width: 95%;
+    padding: 0.75rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #2a2a2a;
+    color: #fff;
+    transition: border-color 0.3s;
+}
+
+.grupo-formulario input:focus {
+    outline: none;
+    border-color: #e0e0e0;
+}
+
+.lista-detalhes {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-detalhes li {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.lista-detalhes strong {
+    color: #fff;
+}
+
+.estadias-detalhes {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #444;
+}
+
+.estadias-detalhes h4 {
+    margin-top: 0;
+    color: #ccc;
+}
+
+.estadias-detalhes ul {
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+.estadias-detalhes li {
+    margin-bottom: 0.5rem;
+}

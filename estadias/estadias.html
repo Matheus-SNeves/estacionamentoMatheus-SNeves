@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estacionamento ACME - Estadias</title>
+    <link rel="stylesheet" href="estadias.css">
+</head>
+<body>
+
+    <header>
+        <h1>ESTACIONAMENTO ACME</h1>
+        <a href="../veiculos/veiculos.html" class="botao" id="trocadorDePagina">Gerenciar Veículos</a>
+    </header>
+
+    <div class="container">
+        <div id="secaoEstadias" class="secao">
+            <div class="secao-header">
+                <h2>ESTADIAS</h2>
+                <button id="botaoAdicionarEstadia" class="botao">Adicionar Estadia</button>
+            </div>
+            <div id="gradeCartoesEstadias" class="grade-cartoes"></div>
+        </div>
+    </div>
+
+    <div id="modalEstadia" class="modal">
+        <div class="modal-conteudo">
+            <div class="modal-header">
+                <h3 id="tituloModalEstadia">Adicionar Estadia</h3>
+                <span class="botao-fechar">&times;</span>
+            </div>
+            <form id="formularioEstadia">
+                <input type="hidden" id="estadiaIdentificador">
+                <div class="grupo-formulario">
+                    <label for="estadiaPlaca">Placa</label>
+                    <input type="text" id="estadiaPlaca" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="estadiaValorPorHora">Valor por Hora</label>
+                    <input type="number" id="estadiaValorPorHora" step="0.01" required>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="estadiaSaida">Saída (opcional)</label>
+                    <input type="datetime-local" id="estadiaSaida">
+                </div>
+                <button type="submit" class="botao">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="estadias.js"></script>
+</body>
+</html>

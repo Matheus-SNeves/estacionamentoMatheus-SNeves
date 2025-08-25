@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            flex-direction: column;
+        }
+        .loading-text {
+            font-size: 1.5rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-text">Redirecionando...</div>
+    <script>
+        window.onload = function() {
+            window.location.href = './estadias/estadias.html';
+        };
+    </script>
+</body>
+</html>
